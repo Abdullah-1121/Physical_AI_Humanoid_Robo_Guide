@@ -1,30 +1,127 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Any CSS or SCSS file in this folder is included in your site CSS.
+ * It is loaded before the Docusaurus custom CSS.
  */
 
-/* You can override the default Infima variables here. */
+/* You can add global CSS styles to this file and also import other CSS/SCSS files */
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #a600ff;
+  --ifm-color-primary-dark: #8c00d9;
+  --ifm-color-primary-darker: #7a00c2;
+  --ifm-color-primary-darkest: #6800a6;
+  --ifm-color-primary-light: #c033ff;
+  --ifm-color-primary-lighter: #d166ff;
+  --ifm-color-primary-lightest: #e399ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* For readability in light mode */
+/* Light mode styles */
+html[data-theme='light'] {
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #24292e;
+  --ifm-hero-background-color: #f0f2f5;
+  --ifm-hero-text-color: #24292e;
+  --ifm-code-background-color: #f6f8fa;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #f0f2f5;
+}
+
+/* Dark mode styles */
+html[data-theme='dark'] {
+  --ifm-background-color: #1a202c;
+  --ifm-font-color-base: #f8f8f8;
+  --ifm-hero-background-color: #2d3748;
+  --ifm-hero-text-color: #f8f8f8;
+  --ifm-code-background-color: #2d3748;
+  --ifm-navbar-background-color: #1a202c;
+  --ifm-footer-background-color: #2d3748;
+}
+
+/* Custom global styles */
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: var(--ifm-color-primary);
+}
+
+a:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+/* Neon button effect */
+.button--neon {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  box-shadow: 0 0 5px var(--ifm-color-primary), 0 0 10px var(--ifm-color-primary), 0 0 20px var(--ifm-color-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.button--neon:hover {
+  background-color: var(--ifm-color-primary-dark);
+  box-shadow: 0 0 10px var(--ifm-color-primary-dark), 0 0 20px var(--ifm-color-primary-dark), 0 0 30px var(--ifm-color-primary-dark);
+}
+
+/* Glassmorphism card effect */
+.glassmorphism-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 20px;
+}
+
+.glassmorphism-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 0;
+  }
+}
+
+/* Custom styles for glassmorphism */
+
+.docusaurus-highlighted-code-line-bg {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for glassmorphism */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Neon accents */
+.neon-text {
+  text-shadow: 0 0 5px #a600ff, 0 0 10px #a600ff, 0 0 15px #a600ff;
+}
+
+.neon-border {
+  border: 2px solid #a600ff;
+  box-shadow: 0 0 5px #a600ff, 0 0 10px #a600ff, 0 0 15px #a600ff;
 }
