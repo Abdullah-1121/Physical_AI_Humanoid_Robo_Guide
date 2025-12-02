@@ -23,9 +23,9 @@ Tasks follow the format: `- [ ] [TaskID] [P?] [Story?] Description with file pat
 
 **Goal**: Prepare the environment and initial project structure.
 
-- [ ] T001 Verify Docusaurus project initialization in `frontend/`
-- [ ] T002 Ensure Node.js and npm dependencies are installed in `frontend/`
-- [ ] T003 Confirm `docusaurus.config.ts` exists in `frontend/`
+- [X] T001 Verify Docusaurus project initialization in `frontend/`
+- [X] T002 Ensure Node.js and npm dependencies are installed in `frontend/`
+- [X] T003 Confirm `docusaurus.config.ts` exists in `frontend/`
 
 ---
 
@@ -33,7 +33,7 @@ Tasks follow the format: `- [ ] [TaskID] [P?] [Story?] Description with file pat
 
 **Goal**: Establish foundational elements before diving into user stories.
 
-- [ ] T004 Review existing `frontend/docusaurus.config.ts` for current configuration
+- [X] T004 Review existing `frontend/docusaurus.config.ts` for current configuration
 - [X] T005 Review and update `frontend/docs/intro.md` for book introduction content
 
 ---

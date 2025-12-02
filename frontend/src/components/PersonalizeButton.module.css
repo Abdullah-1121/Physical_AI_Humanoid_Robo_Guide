@@ -1,0 +1,13 @@
+.personalizeButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.personalizeButton:hover {
+  opacity: 0.8;
+}

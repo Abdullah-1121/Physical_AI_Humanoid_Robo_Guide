@@ -1,0 +1,13 @@
+.gridContainer {
+  display: grid;
+  gap: 20px;
+}
+
+.column {
+  /* Add column-specific styles here if needed */
+}
+
+.heroSectionWrapper {
+  padding: 80px 0;
+  text-align: center;
+}
