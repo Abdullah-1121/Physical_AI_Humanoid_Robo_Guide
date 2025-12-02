@@ -1,0 +1,7 @@
+.mdxLayoutContainer {
+  /* Add consistent typography, spacing, and theme styles here */
+  padding: 20px;
+  line-height: 1.6;
+  /* font-family: Arial, sans-serif; Removed to ensure consistent typography from custom.css */
+  color: var(--ifm-font-color-base);
+}
